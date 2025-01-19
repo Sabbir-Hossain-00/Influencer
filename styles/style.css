@@ -1,3 +1,82 @@
-h1{
-    color: brown;
-}
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* global styles */
+
+  /* nav styles start here */
+   header{
+    max-width: 83%;
+    margin: 0 auto;
+   }
+  #menu{
+    display: none;
+  }
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+  }
+  .logo h1{
+    font-size: 1.5rem;
+    color: #3A3A3A;
+  }
+  .nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+  }
+  .nav-content ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+  }
+  .nav-content ul li{
+    list-style: none;
+  }
+  .nav-content ul a{
+    text-decoration: none;
+    color:#3A3A3A ;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+
+  /* responsive for mobile */
+
+  @media (max-width:576px) {
+    .nav-content ul{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+    
+  }
+
+  /* responsive for tablet */
+
+  @media (min-width:576px) and (max-width:992px) {
+    .nav-content ul{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+  }
